@@ -160,17 +160,37 @@ export async function registerRoutes(server: Server, app: Express) {
         {
           crop: "Rice",
           confidence: 0.87,
-          ideal: { N: 80, P: 40, K: 40, ph: 6.0, temp: 25, hum: 80, rain: 200 },
+          ideal: { N: 80, P: 40, K: 40, ph: 6.5, temp: 25, hum: 80, rain: 1200 },
         },
         {
           crop: "Maize",
           confidence: 0.72,
-          ideal: { N: 90, P: 42, K: 43, ph: 6.5, temp: 22, hum: 65, rain: 85 },
+          ideal: { N: 90, P: 42, K: 43, ph: 6.8, temp: 22, hum: 65, rain: 750 },
         },
         {
           crop: "Cotton",
           confidence: 0.61,
-          ideal: { N: 115, P: 45, K: 43, ph: 7.0, temp: 28, hum: 55, rain: 70 },
+          ideal: { N: 115, P: 45, K: 43, ph: 7.5, temp: 28, hum: 55, rain: 800 },
+        },
+        {
+          crop: "Wheat",
+          confidence: 0.55,
+          ideal: { N: 100, P: 50, K: 40, ph: 6.5, temp: 15, hum: 60, rain: 600 },
+        },
+        {
+          crop: "Sugarcane",
+          confidence: 0.48,
+          ideal: { N: 150, P: 60, K: 80, ph: 7.0, temp: 27, hum: 70, rain: 1500 },
+        },
+        {
+          crop: "Groundnut",
+          confidence: 0.42,
+          ideal: { N: 25, P: 50, K: 75, ph: 6.0, temp: 25, hum: 65, rain: 500 },
+        },
+        {
+          crop: "Chillies",
+          confidence: 0.38,
+          ideal: { N: 100, P: 60, K: 40, ph: 6.5, temp: 24, hum: 60, rain: 1000 },
         },
       ];
 
