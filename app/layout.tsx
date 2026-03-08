@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
@@ -8,13 +8,17 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "CropGuard AI - Instant Crop Disease Detection via WhatsApp",
+  title: "Crop Health AI - AI-Powered Crop Disease Detection",
   description:
-    "Protect your crops with AI-powered disease detection. Simply send a photo through WhatsApp and receive instant diagnosis and treatment recommendations.",
+    "Detect crop diseases instantly with AI. Upload a photo of your affected crop and receive diagnosis with treatment recommendations via WhatsApp chatbot.",
+  keywords: ["crop disease detection", "AI agriculture", "plant health", "farming technology", "WhatsApp chatbot"],
+  authors: [{ name: "NextGenIoT Team" }],
 };
 
-export const viewport = {
-  themeColor: "#22c55e",
+export const viewport: Viewport = {
+  themeColor: "#166534",
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({
@@ -24,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} font-sans antialiased`}>
+      <body className={`${inter.variable} font-sans`}>
         {children}
       </body>
     </html>

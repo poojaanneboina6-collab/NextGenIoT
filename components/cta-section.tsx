@@ -1,42 +1,35 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { MessageCircle, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 export function CTASection() {
   return (
-    <section className="bg-primary py-20 sm:py-28">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <section className="bg-primary py-20 sm:py-24">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
-          {/* WhatsApp icon */}
-          <div className="mx-auto mb-8 flex h-16 w-16 items-center justify-center rounded-full bg-primary-foreground/10">
-            <MessageCircle className="h-8 w-8 text-primary-foreground" />
-          </div>
-
-          <h2 className="text-balance text-3xl font-bold tracking-tight text-primary-foreground sm:text-4xl lg:text-5xl">
+          <h2 className="text-balance text-3xl font-bold tracking-tight text-primary-foreground sm:text-4xl">
             Ready to Protect Your Crops?
           </h2>
 
-          <p className="mt-6 text-lg leading-relaxed text-primary-foreground/80">
-            Join thousands of farmers already using CropGuard AI. Start
-            detecting crop diseases in seconds — completely free.
+          <p className="mt-4 text-lg leading-relaxed text-primary-foreground/80">
+            Join thousands of farmers using AI to detect crop diseases early.
+            Start for free today.
           </p>
 
           {/* CTA Button */}
-          <div className="mt-10">
+          <div className="mt-8">
             <Button
               size="lg"
-              variant="secondary"
-              className="gap-2 bg-primary-foreground text-primary hover:bg-primary-foreground/90"
+              className="gap-2 bg-background px-8 text-primary hover:bg-background/90"
               asChild
             >
               <a
-                href="https://wa.me/1234567890?text=Hi%20CropGuard!"
+                href="https://wa.me/1234567890?text=Hi%20Crop%20Health%20AI!"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <MessageCircle className="h-5 w-5" />
-                Start Chatting on WhatsApp
+                Try the AI Now
                 <ArrowRight className="h-4 w-4" />
               </a>
             </Button>
