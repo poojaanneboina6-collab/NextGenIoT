@@ -3,7 +3,6 @@ import { HeroSection } from "@/components/hero-section";
 import { FeaturesSection } from "@/components/features-section";
 import { HowItWorksSection } from "@/components/how-it-works-section";
 import { StatsSection } from "@/components/stats-section";
-import { BenefitsSection } from "@/components/benefits-section";
 import { CTASection } from "@/components/cta-section";
 import { Footer } from "@/components/footer";
 
@@ -12,15 +11,10 @@ export default function Home() {
     <main className="min-h-screen">
       <Navbar />
       <HeroSection />
-      <section id="features">
-        <FeaturesSection />
-      </section>
-      <section id="how-it-works">
-        <HowItWorksSection />
-      </section>
-      <StatsSection />
-      <section id="benefits">
-        <BenefitsSection />
+      <FeaturesSection />
+      <HowItWorksSection />
+      <section id="stats">
+        <StatsSection />
       </section>
       <CTASection />
       <Footer />
